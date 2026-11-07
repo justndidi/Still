@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #ebe7e1;
+}
+p{
+    font-family: "Fraunces", serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: rgb(245, 245, 245, 0.3);
+}
+header p{
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #f5f1ea;
+    font-family: "Cormorant Garamond", serif;
+}
+header nav{
+    display: flex;
+    gap: 20px;
+
+}
+header nav a{
+    text-decoration: none;
+    color: #f5f1ea;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: 0.3s ease-in-out;
+}
+header a:hover{
+    color: black;
+}
+header button{
+    background: none;
+    cursor: pointer;
+    border: none;
+    padding: 6px 10px;
+    color: white;
+    text-transform: uppercase;
+    outline: none;
+}
+header button:hover{
+    border: 1px solid wheat;
+    border-radius: 6px;
+}
+.hero-section{
+    display: grid;
+    grid-template-columns: 43% 57%;
+    min-height: 100vh;
+}
+
+.hero-texts{
+    /* background: #26342E; */
+    background: #243229;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 6rem 0 4rem;
+}
+.hero-texts p:nth-child(1){
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.hero-texts h1{
+    font-family: "Cormorant Garamond", serif;
+    font-size: 90px;
+    letter-spacing: -2px;
+    line-height: 1.1;
+    padding: 40px 0;
+    color: white;
+    font-weight: 300;
+}
+.hero-texts em{
+    color: rgb(130, 127, 127);
+}
+
+.hero-texts p{
+    color: rgb(130, 127, 127);
+    font-size: 17px;
+    line-height: 1.7;
+}
+.hero-texts a{
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+    width: 250px;
+    /* transition: transform 1s ease-in-out; */
+}
+.hero-texts a:hover{
+    span{
+        transform: translate(6px, -6px);
+    }
+    
+}
+
+.hero-image{
+    background: url("images/furniture1.jpg") center / cover no-repeat;
+}
+
+.collection{
+    padding: 8rem 4rem;
+}
+.collection-info{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    /* min-height: 50vh; */
+    margin-bottom: 6rem;
+}
+.collection-info p {
+    color: rgb(184, 127, 53);
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.collection h2{
+    font-size: 69px;
+    font-weight: 100;
+    font-family: "Cormorant Garamond", serif;
+}
+.collection-items p{
+    color: rgb(184, 127, 53);
+    font-size: 14px;
+}
+.collection-items-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+
+.philosophy{
+    display: grid;
+    grid-template-columns: 55% 45%;
+    min-height: 100vh;
+}
+.philosophy-img{
+    background: url("images/philosophy-image.avif") center / cover no-repeat;
+}
+.philosophy-texts{
+    background: rgb(225, 216, 196);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    padding: 6rem;
+}
+.philosophy-texts p:nth-child(1){
+    color: rgb(184, 127, 53);
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.philosophy-texts h2{
+    font-size: 68px;
+    font-weight: 100;
+    font-family: "Cormorant Garamond", serif;
+    line-height: 1.1;
+    padding: 30px 0 40px;
+}
+
+.philosophy-texts p{
+    color: grey;
+    padding-bottom: 20px;
+    line-height: 1.7;
+}
+.philosophy-texts a{
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(67, 57, 39);
+    padding-top: 25px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    display: flex;
+    /* gap: 10px; */
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(67, 57, 39);
+    width: 250px;
+}
+.philosophy-texts a:hover{
+    span{
+        transform: translate(6px, -6px);
+    }
+    
+}
+.ratings{
+    display: flex;
+    gap: 60px;
+    margin: 5rem 0 0;
+    padding-top: 1rem;
+    border-top: 1px solid white;
+}
+.ratings span{
+    font-size: 35px;
+    font-family: "Cormorant Garamond", serif;
+}
+.ratings span:nth-child(2){
+    transform: rotate('360');
+}
+.ratings p{
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.matters{
+    background-color: #243229;
+    padding: 6rem;
+}
+.matters p:nth-child(1){
+    color: rgb(216, 213, 213);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: "Fraunces", serif;
+}
+.matters h2{
+    color: white;
+    font-size: 68px;
+    font-weight: 100;
+    font-family: "Cormorant Garamond", serif;
+    line-height: 1.0;
+    padding-top: 1rem;
+}
+.matters-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px 0;
+}
+.matters-gridbox{
+    position: relative;
+    padding: 40px 30px;
+    min-height: 200px;
+}
+.matters-gridbox:first-child{
+    padding-left: 0;
+}
+.matters-gridbox span {
+    color: rgba(255, 255, 255, 0.5);
+}
+.matters-gridbox h3{
+    font-size: 32px;
+    padding: 40px 0 20px;
+    color: white;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 100;
+}
+.matters-gridbox p{
+    color: white;
+    font-size: 14px;
+    line-height: 1.7;
+}
+.matters-gridbox:not(:last-child)::after{
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: 0;
+    width: 1px;
+    height: 250px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.story{
+    display: grid;
+    grid-template-columns: 35% 35% 25%;
+    justify-content: space-between;
+    height: 600px;
+    margin: 6rem;
+}
+.story-texts{
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    justify-content: center;
+    padding-right: 10px;
+}
+.story-texts span{
+    color: rgb(184, 127, 53);
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.story-texts h2{
+    /* font-size: 68px; */
+    font-size: clamp(68px, 5vw, 75px);
+    font-weight: 200;
+    font-family: "Cormorant Garamond", serif;
+    line-height: 0.9;
+    padding: 50px 0 30px;
+}
+
+.story-texts p{
+    color: grey;
+    font-weight: 200;
+    padding-bottom: 20px;
+    line-height: 1.8;
+    font-size: 15px;
+}
+.story-texts a{
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(67, 57, 39);
+    padding-top: 25px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    display: flex;
+    /* gap: 10px; */
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(67, 57, 39);
+    width: 160px;
+}
+.story-image1{
+    /* background: url("images/story-image1.avif") center / cover no-repeat; */
+    height: 600px;
+    overflow: hidden;
+}
+.story-image1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.story-image2{
+    /* background: url("images/story-image2.avif") center / cover no-repeat; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 40px 40px;
+}
+.story-image2 img{
+    width: 100%;
+    height: 370px;
+    object-fit: cover;
+}
+
+footer{
+    padding: 6rem;
+    /* background: rgb(19, 13, 13); */
+    background-color: rgb(44, 40, 35);
+}
+.footer-header p{
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+}
+.footer-header div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    /* align-items: ; */
+    margin: 20px 0;
+}
+.footer-header h2{
+    font-size: 65px;
+}
